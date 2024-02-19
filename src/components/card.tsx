@@ -11,6 +11,8 @@ import javascript from '../assets/javascript.svg'
 import types from '../assets/types.svg'
 import tailwind from '../assets/tailwind.svg'
 import react from '../assets/react.svg'
+import python from '../assets/python.svg'
+import node from '../assets/node.svg'
 
 export function Card() {
   return( 
@@ -25,16 +27,17 @@ export function Card() {
       </Dialog.Trigger>
         <Dialog.Portal>
           <Dialog.Overlay className='inset-0 fixed bg-black/60'>
-            <Dialog.Content className='z-10 fixed left-1/2 top-1/2 overflow-hidden -translate-x-1/2 -translate-y-1/2 max-w-[640px] w-full h-[80vh] bg-slate-900 rounded-md flex flex-col outline-none'>
+            <Dialog.Content className='z-10 fixed left-1/2 top-1/2 overflow-hidden -translate-x-1/2 -translate-y-1/2 max-w-[640px] w-full max-h-[80vh] bg-slate-900 rounded-md flex flex-col outline-none'>
               <Dialog.Close className='absolute top-0 right-0 hover:bg-slate-800 hover:text-slate-300 p-1.5 text-slate-400 rounded-full '>
                 <X className='size-5'/>
               </Dialog.Close>
               <div className='flex justify-items-center place-items-center gap-7 bg-slate-800'>
-                  <img src={logo} className="rounded-full bg-cover bg-center size-40 justify-items-center place-items-center m-4" />
-                <div className='text-slate-400 w-96'>
-                  <p className='font-bold text-slate-50'>Educação:</p>
-                    <p > <span className='text-slate-50'> Ensino Superior:</span>  UFABC cursando Bacharelado em Ciências e suas tecnologias</p>
-                    <p> <span className='text-slate-50'>Ensino Médio:</span> Etec com o curso Desenvolvimento de sistemas  </p>
+                  <div className='flex flex-col items-center'>
+                    <img src={logo} className="rounded-full bg-cover bg-center size-40 justify-items-center place-items-center m-4" />
+                    <p className='text-slate-500 mb-2'>Dev front-end</p>
+                  </div> 
+                <div className='text-slate-400 max-w-96'>
+                  <p></p>
                 </div>   
               </div>
 
@@ -61,9 +64,8 @@ export function Card() {
                   </div>
                   <div className='flex items-center flex-col mb-3'>
                     <p className='text-sm mb-3'>Baixar:</p>
-                    <a href="/assets/curriculum.pdf"
+                    <a href="../assets/curriculum.pdf"
                      target='_blank'
-                     rel="noopener noreferrer"
                     className='border border-slate-600 flex max-w-28 w-28 rounded-md p-2 gap-1 mb-3 hover:bg-slate-600 text-sm'
                     >
                      <ArchiveRestore className='size-4'/>Curriculo
@@ -71,17 +73,26 @@ export function Card() {
                   </div>
 
                 </div>
-                <div className='bg-slate-800 w-full rounded-md'>
-                    <p className='text-slate-50 m-4 text-sm '>Tecnologias:</p>
-                    <div className='h-px bg-slate-700'></div>
-                    <div className='flex gap-3 m-4'>
-                        <img src={html} />
-                        <img src={css} />
-                        <img src={javascript} />
-                        <img src={types} />
-                        <img src={tailwind} />
-                        <img src={react} />
+                <div className='bg-slate-800 w-full rounded-md text-slate-50'>
+                    <p className=' m-4 text-sm '>Tecnologias: <span className='cursor-pointer' title='nivel: básico - médio'> ⭐⭐⭐</span></p>
+                    <div className='gap-3 m-4 h-28 justify-center cursor-pointer grid grid-cols-5'>
+                        <img src={html} title='HTML'/>
+                        <img src={css} title='CSS' />
+                        <img src={javascript} title='JavaScript'/>
+                        <img src={types} title='TypeScript'/>
+                        <img src={tailwind} title='Tailwind Css'/>
+                        <img src={react} title='React'/>
+                        <img src={python} title='Python' />
+                        <img src={node} alt="Node.JS" />
                     </div>
+
+                    <div className='h-px bg-slate-700'/>
+                    <div className='text-slate-400 flex flex-col m-4'>
+                      <p className='font-bold text-slate-50'>Educação:</p>
+                      <p > <span className='text-slate-50'> Ensino Superior:</span>  UFABC cursando Bacharelado em Ciências e suas tecnologias</p>
+                      <p> <span className='text-slate-50'>Ensino Médio:</span> Etec com o curso Desenvolvimento de sistemas  </p>
+                    </div>
+                    
                 </div>
                 
               </div>
