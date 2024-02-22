@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'sans': 'Inter'
+      'sans': 'Inter',
+      'mono': 'VT323'
     }
   },
   plugins: [],
