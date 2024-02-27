@@ -12,7 +12,7 @@ export function Header(){
       <div className='flex w-full justify-end text-zinc-500 gap-3 text-sm items-center mr-4'>
         <a href="#main" className='hover:text-zinc-300  hover:bg-slate-500/10 rounded-md p-2'>Home</a>
         <a href="#stacks" className='hover:text-zinc-300 hover:bg-slate-500/10 rounded-md p-2'>Skills</a>
-        <a href="" className='hover:text-zinc-300 hover:bg-slate-500/10 rounded-md p-2'>Projetos</a>
+        <a href="#projects" className='hover:text-zinc-300 hover:bg-slate-500/10 rounded-md p-2'>Projetos</a>
         <a href="" className='hover:text-zinc-300 hover:bg-slate-500/10 rounded-md p-2'>About</a>
       </div>
     </div>

@@ -3,6 +3,7 @@
 
 import { Header } from "./components/header";
 import { Main } from "./components/main";
+import { Projects } from "./components/projects";
 import { Stacks } from "./components/stacks";
 
 
@@ -11,8 +12,8 @@ export function App() {
     <div >
       <Header />
       <Main/>
-      <div className="h-px bg-zinc-800"/>
-      <Stacks/>
+      <Stacks/>      
+      <Projects/>
     </div>
   )
 }

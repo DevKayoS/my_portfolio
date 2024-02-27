@@ -4,36 +4,50 @@ import javascript from '../assets/javascript.svg'
 import types from '../assets/types.svg'
 import tailwind from '../assets/tailwind.svg'
 import react from '../assets/react.svg'
+import { ArrowDown } from 'lucide-react'
 
 export function Stacks() {
   return (
     <div id='stacks' className=' flex flex-col h-[100vh]  text-slate-50'>
-      <div>
-        <h1 className='ml-32 mt-28  font-bold text-4xl'>Tecnologias 🤖 </h1>
-        <div className="h-3 rounded-full ml-32 w-96 bg-purple-600 mb-8 mt-3"/>
-      </div>
-      <div className=' flex gap-3 w-[700px] justify-center rounded-md h-44 ml-32 items-center bg-zinc-800'>
-        <div className='w-96'>
-        
-        <p className='p-2 '>Venho estudando todas essas tecnologias já irá fazer 1 ano, sinto que estou ficando melhor, mas quanto mais aprendo mais eu vejo o quanto ainda falta para aprender</p>
-
+        <div>
+          <h1 className='ml-32 mt-28  font-bold text-3xl hover:text-purple-600'>Tecnologias  </h1>
+          <div className="h-2 rounded-full ml-32 w-96 bg-purple-600 mb-8 mt-3"/>
         </div>
 
-        <div className='w-px bg-zinc-300 h-full'/>
+        <div className='grid grid-cols-2 gap-52 max-w-[1500px]'>
+        <div className=' flex gap-3 w-[600px] p-4 justify-center rounded-md shadow-lg shadow-purple-600  ml-32 items-center  bg-zinc-700/30'>
+          <div >  
+          <p className='text-zinc-400 text-lg hover:text-zinc-300 cursor-pointer'>"Iniciei meus estudos na área em 2020, porém me aprofundei mais há um ano nessas tecnologias e posso perceber um progresso significativo em minha jornada. Cada novo conhecimento adquirido revela a vastidão do campo em que estou imerso e a complexidade que o envolve. Quanto mais me aprofundo, mais claramente percebo o quanto ainda há por descobrir. Este constante desafio me motiva a continuar aprendendo e aprimorando minhas habilidades."</p>
+          </div> 
         
-        
-        <div className='rounded-md text-slate-50 ml-32 mt-28 font-sans'>
-                    <div className=' m-4 h-28 justify-center cursor-pointer flex '>
-                        <img src={html} className='size-10' title='HTML'/>
-                        <img src={css} className='size-10' title='CSS' />
-                        <img src={javascript} className='size-10' title='JavaScript'/>
-                        <img src={types} className='size-10' title='TypeScript'/>
-                        <img src={tailwind} className='size-10' title='Tailwind Css'/>
-                        <img src={react} className='size-10' title='React'/>
-                    </div>
+      </div>
+      <div className=' flex gap-3 w-96 p-4 justify-center rounded-md shadow-lg shadow-purple-600 flex-col  items-center cursor-pointer bg-zinc-700/30'>
+      <div>
+        <p className='text-zinc-400 hover:text-zinc-300'>Tecnologias que tenho conhecimentos: </p>
+      </div>
+          <div className='h-px bg-zinc-300 w-full'/>
 
+                      <div className=' grid grid-cols-5  '>
+                          <img src={html} className='size-16 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='HTML'/>
+                          <img src={css} className='size-16 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='CSS' />
+                          <img src={javascript} className='size-16 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='JavaScript'/>
+                          <img src={types} className='size-16 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='TypeScript'/>
+                          <img src={tailwind} className='size-16 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='Tailwind Css'/>
+                          <img src={react} className='size-16 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='React'/>
+                      </div>
+
+       
       </div>
     </div>
+       
+
+      <div className='flex items-center justify-center mb-16 mt-32'>
+        <a href="#projects">
+          <ArrowDown className="text-slate-700 w-8 h-8 motion-safe:animate-bounce  rounded-full mt-0 border-2"/>
+        </a>
+
+      </div>
+      <div className="h-px bg-zinc-800"/>
     </div>
   )
 }

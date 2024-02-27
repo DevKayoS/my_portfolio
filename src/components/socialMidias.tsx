@@ -6,7 +6,7 @@ import { ArchiveRestore } from 'lucide-react'
 export function SocialMidia() {
   return  ( 
 
-    <div className='flex mt-28 gap-5 fixed'>
+    <div className='flex mt-64 gap-5 fixed'>
       <div className='bg-zinc-800 w-14 rounded-md text-center max-h-48 text-slate-50'>
         <div className='flex flex-col items-center'>
           <a href="https://api.whatsapp.com/send?phone=5511964443582" 
