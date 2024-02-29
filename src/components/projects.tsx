@@ -1,7 +1,7 @@
 import clima from "../assets/condicoes_climaticas.png"
 import rest from "../assets/api_rest.png"
 import {motion} from "framer-motion"
-import { ArrowDown } from "lucide-react"
+
 
 
 export function Projects(){

@@ -4,7 +4,7 @@ import javascript from '../assets/javascript.svg'
 import types from '../assets/types.svg'
 import tailwind from '../assets/tailwind.svg'
 import react from '../assets/react.svg'
-import { ArrowDown } from 'lucide-react'
+
 
 export function Stacks() {
   return (
