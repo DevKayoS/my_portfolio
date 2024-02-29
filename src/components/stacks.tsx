@@ -8,20 +8,25 @@ import { ArrowDown } from 'lucide-react'
 
 export function Stacks() {
   return (
+  
+  <div>
+
+
+  <div className="h-px bg-zinc-800"/>
     <div id='stacks' className=' flex flex-col h-[100vh]  text-slate-50'>
-        <div>
+        <div className='flex flex-col justify-start'>
           <h1 className='ml-32 mt-28  font-bold text-3xl hover:text-purple-600'>Tecnologias  </h1>
           <div className="h-2 rounded-full ml-32 w-96 bg-purple-600 mb-8 mt-3"/>
         </div>
 
         <div className='grid grid-cols-2 gap-52 max-w-[1500px]'>
-        <div className=' flex gap-3 w-[600px] p-4 justify-center rounded-md shadow-lg shadow-purple-600  ml-32 items-center  bg-zinc-700/30'>
+        <div className=' flex gap-3 w-[600px] p-4 justify-center rounded-md shadow-lg shadow-purple-600  ml-32 items-center  bg-zinc-500/30'>
           <div >  
           <p className='text-zinc-400 text-lg hover:text-zinc-300 cursor-pointer'>"Iniciei meus estudos na área em 2020, porém me aprofundei mais há um ano nessas tecnologias e posso perceber um progresso significativo em minha jornada. Cada novo conhecimento adquirido revela a vastidão do campo em que estou imerso e a complexidade que o envolve. Quanto mais me aprofundo, mais claramente percebo o quanto ainda há por descobrir. Este constante desafio me motiva a continuar aprendendo e aprimorando minhas habilidades."</p>
           </div> 
         
       </div>
-      <div className=' flex gap-3 w-96 p-4 justify-center rounded-md shadow-lg shadow-purple-600 flex-col  items-center cursor-pointer bg-zinc-700/30'>
+      <div className=' flex gap-3 w-96 p-4 justify-center rounded-md shadow-lg shadow-purple-600 flex-col  items-center cursor-pointer bg-zinc-500/30'>
       <div>
         <p className='text-zinc-400 hover:text-zinc-300'>Tecnologias que tenho conhecimentos: </p>
       </div>
@@ -41,13 +46,9 @@ export function Stacks() {
     </div>
        
 
-      <div className='flex items-center justify-center mb-16 mt-32'>
-        <a href="#projects">
-          <ArrowDown className="text-slate-700 w-8 h-8 motion-safe:animate-bounce  rounded-full mt-0 border-2"/>
-        </a>
-
-      </div>
-      <div className="h-px bg-zinc-800"/>
+      
+      
+    </div>
     </div>
   )
 }

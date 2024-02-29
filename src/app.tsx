@@ -1,6 +1,7 @@
 // import { BioCard } from "./components/bio-card"
 // import { Card } from "./components/card"
 
+import { About } from "./components/about";
 import { Header } from "./components/header";
 import { Main } from "./components/main";
 import { Projects } from "./components/projects";
@@ -12,8 +13,12 @@ export function App() {
     <div >
       <Header />
       <Main/>
-      <Stacks/>      
+     
+      <Stacks/>
+         
       <Projects/>
+      
+      <About/>
     </div>
   )
 }
