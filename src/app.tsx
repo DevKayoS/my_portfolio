@@ -10,7 +10,7 @@ import { Stacks } from "./components/stacks";
 
 export function App() {
   return (
-    <div >
+    <div className="lg:max-w-[1800px] md:max-w-[1800px] max-w-[750px]">
       <Header />
       <Main/>
      
