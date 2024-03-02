@@ -22,7 +22,7 @@ export function About() {
     <div id='about' className="text-slate-50 max-w-[200vh] h-[200vh] mt-96 lg:h-[100vh] ">
      <div className="lg:h-px  bg-zinc-800"/>
      
-    <div   className='ml-40  lg:ml-0 flex flex-col justify-center items-center text-slate-50'>
+    <div   className='ml-44  lg:ml-0 flex flex-col justify-center items-center text-slate-50'>
       
     <motion.div 
           variants={container}
