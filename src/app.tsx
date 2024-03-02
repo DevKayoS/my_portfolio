@@ -10,15 +10,19 @@ import { Stacks } from "./components/stacks";
 
 export function App() {
   return (
-    <div className="lg:max-w-[1800px] md:max-w-[1800px] max-w-[750px]">
+    <div className="lg:max-w-[1800px] md:max-w-[1800px] max-w-72">
       <Header />
       <Main/>
+
+    <div className="lg:max-w-[1800px] md:max-w-[1800px] max-w-96 space-y-[1000px] md:space-y-0">
      
-      <Stacks/>
-         
-      <Projects/>
+     <Stacks/>
+        
+     <Projects/>
+     
+     <About/>
+    </div>
       
-      <About/>
     </div>
   )
 }
