@@ -4,6 +4,7 @@ import javascript from '../assets/javascript.svg'
 import types from '../assets/types.svg'
 import tailwind from '../assets/tailwind.svg'
 import react from '../assets/react.svg'
+import node from '../assets/node.svg'
 
 
 export function Stacks() {
@@ -41,6 +42,7 @@ export function Stacks() {
                           <img src={types} className='size-16 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='TypeScript'/>
                           <img src={tailwind} className='size-16 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='Tailwind Css'/>
                           <img src={react} className='size-16 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='React'/>
+                          <img src={node} className='size-16 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='Node.JS'/>
                       </div>
 
     </div>
