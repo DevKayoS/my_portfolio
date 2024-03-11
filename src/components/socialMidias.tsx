@@ -4,6 +4,17 @@ import { LinkedinIcon } from 'lucide-react'
 import { ArchiveRestore } from 'lucide-react'
 
 export function SocialMidia() {
+  const handleDownload = () => {
+    const fileUrl = './assets/curriculo.pdf'; // Insira a URL do arquivo
+    const fileName = 'curriculo.pdf'; // Insira o nome do arquivo
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.setAttribute('download', fileName);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return  ( 
 
     <div className='flex mt-64 gap-5 fixed'>
@@ -24,14 +35,6 @@ export function SocialMidia() {
           className='border border-purple-600 flex  rounded-md p-2 gap-1 mb-3 hover:bg-purple-600 text-sm'
           >
           <Github className='size-4'/> 
-            </a>
-        </div>
-        <div className='flex items-center flex-col mb-3'>
-          <a href="../assets/curriculum.pdf"
-          target='_blank'
-          className='border border-slate-600 flex  rounded-md p-2 gap-1 mb-3 hover:bg-slate-600 text-sm'
-          >
-          <ArchiveRestore className='size-4'/>
             </a>
         </div>
     </div>

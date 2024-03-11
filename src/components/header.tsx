@@ -2,7 +2,7 @@ import perfil from '../assets/perfil.png'
 
 export function Header(){
   return(
-    <div className="w-full  bg-zinc-800 h-16   md:space-x-[1200px]  flex fixed  space-x-16">
+    <div className="w-full  bg-zinc-800 h-16  md:justify-between md:space-x-[1200px]  flex fixed  space-x-16">
       
       <div className='ml-2 flex-row gap-2   flex '>
         <img src={perfil} className="rounded-md mt-3  size-10" />
