@@ -1,20 +1,10 @@
 import { Phone } from 'lucide-react'
 import { Github } from 'lucide-react'
 import { LinkedinIcon } from 'lucide-react'
-import { ArchiveRestore } from 'lucide-react'
+
 
 export function SocialMidia() {
-  const handleDownload = () => {
-    const fileUrl = './assets/curriculo.pdf'; // Insira a URL do arquivo
-    const fileName = 'curriculo.pdf'; // Insira o nome do arquivo
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.setAttribute('download', fileName);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
+ 
   return  ( 
 
     <div className='flex mt-64 gap-5 fixed'>
