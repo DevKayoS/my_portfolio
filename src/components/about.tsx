@@ -3,7 +3,7 @@ import perfil from '../assets/perfil.png'
 import { Phone } from 'lucide-react'
 import { Github } from 'lucide-react'
 import { LinkedinIcon } from 'lucide-react'
-import { Navgation } from "./navgation"
+
 
 export function About() {
   const container = {

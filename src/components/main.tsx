@@ -1,6 +1,5 @@
 import { SocialMidia } from "./socialMidias";
 import {motion} from "framer-motion"
-import { UserRound, Laptop2, FolderGit2, Home} from "lucide-react"
 import { Navgation } from "./navgation";
 
 export function Main() {
