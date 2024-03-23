@@ -2,6 +2,7 @@ import clima from "../assets/condicoes_climaticas.png"
 import rest from "../assets/api_rest.png"
 import {motion} from "framer-motion"
 import { ArrowRight } from "lucide-react";
+import { Navgation } from "./navgation";
 
 
 export function Projects(){
@@ -20,8 +21,8 @@ export function Projects(){
 
   return (
     <div >
-      <div className="lg:h-px  bg-zinc-800"/>
-      <div id='projects'  className='projetos flex flex-col lg:w-full items-center h-[200vh] w-[80vh] mb-[400px] lg:mb-0 text-slate-50'>
+      <div className="lg:h-px md:w-full bg-zinc-800"/>
+      <div id='projects'  className='projetos flex flex-col lg:w-full items-center h-[200vh] w-[80vh]   text-slate-50'>
         
         <div className="'ml-16 mt-28   ">
           <motion.div 
@@ -56,20 +57,17 @@ export function Projects(){
               <a href="https://github.com/DevKayoS/api_restfull_com_ts" target="_blank" className="w-96 bg-zinc-600/30 shadow-lg shadow-purple-600 hover:shadow-sky-500 rounded-md h-96 overflow-hidden">
                   <img src={rest}  />
                   <p className="m-3 font-bold">API RESTFull com Express + TS</p>
-                  <p className="m-3 text-sm text-zinc-400">API RESTFull feita com o framework Express, com o winston e com TypeScript <span className="font-bold hover:underline text-slate-100">Clique para acessar </span></p>
-                
+                  <p className="m-3 text-sm text-zinc-400">API RESTFull feita com o framework Express, com o winston e com TypeScript <span className="font-bold hover:underline text-slate-100">Clique para acessar </span></p> 
               </a>
-
             </div>
-
           </div>
-            <div className="text-slate-50 flex items-center md:text-xl lg:text-xl justify-center flex-row text-sm mt-20  mb-20">
+            <div className="text-slate-50 flex items-center md:text-xl lg:text-xl justify-center flex-row text-sm mt-20 ">
               <p>Para acessar o meu repositório no GitHub <a href="https://github.com/DevKayoS" target="_blank" className="text-purple-500 font-bold hover:underline flex "> clique aqui <ArrowRight/></a> </p>
             </div>
 
         </div>
+        <Navgation/>
       </div>
-
      
     </div>
   )

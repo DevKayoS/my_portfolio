@@ -5,15 +5,14 @@ import types from '../assets/types.svg'
 import tailwind from '../assets/tailwind.svg'
 import react from '../assets/react.svg'
 import node from '../assets/node.svg'
+import { Navgation } from './navgation'
 
 
 export function Stacks() {
   return (
   
   <div >
-
-
-  <div className="lg:h-px bg-zinc-800"/>
+  <div className="lg:h-px md:w-full bg-zinc-800"/>
     <div id='stacks' className=' flex flex-col h-[100vh]  text-slate-50'>
         <div className='flex flex-col justify-start'>
           <h1 className='ml-16 mt-28 md:ml-32  font-bold text-3xl hover:text-purple-600'>Tecnologias  </h1>
@@ -48,7 +47,7 @@ export function Stacks() {
     </div>
       </div>
     </div>
-       
+    <Navgation/>
 
       
       
