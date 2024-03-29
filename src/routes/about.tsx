@@ -1,5 +1,5 @@
 import {motion} from "framer-motion"
-import { Download } from "../components/download";
+
 
 
 export function About() {
