@@ -1,14 +1,14 @@
-import { Phone } from 'lucide-react'
-import { Github } from 'lucide-react'
-import { LinkedinIcon } from 'lucide-react'
+import { Phone, Github, LinkedinIcon, Mail } from 'lucide-react'
+
+
 
 
 export function SocialMidia() {
  
   return  ( 
 
-    <div className='flex mt-64 gap-5 fixed'>
-      <div className='bg-zinc-800 w-14 rounded-md text-center max-h-48 text-slate-50'>
+    <div className='flex mt-44 gap-5 fixed'>
+      <div className='bg-zinc-950/85 shadow-md shadow-black w-14 rounded-r-md text-center max-h-48 text-slate-50'>
         <div className='flex flex-col items-center'>
           <a href="https://api.whatsapp.com/send?phone=5511964443582" 
           target='_blank'
@@ -26,6 +26,13 @@ export function SocialMidia() {
           >
           <Github className='size-4'/> 
             </a>
+            <a href="mailto:kayoribeirodev@gmail.com?subject=Vim pelo portifolio&body=Corpo da mensagem"
+          target='_blank'
+          className='border border-zinc-600 flex  rounded-md p-2 gap-1 mb-3 hover:bg-zinc-600 text-sm'
+          >
+          <Mail className='size-4'/> 
+            </a>
+
         </div>
     </div>
 </div>
