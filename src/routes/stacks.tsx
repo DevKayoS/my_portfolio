@@ -6,6 +6,9 @@ import tailwind from '../assets/tailwind.svg'
 import react from '../assets/react.svg'
 import node from '../assets/node.svg'
 import sql from '../assets/sql.svg'
+import mongodb from '../assets/mongodb-icon.svg'
+import csharp from '../assets/icons8-c-sharp-logo.svg'
+
 import { motion } from 'framer-motion'
 
 
@@ -24,14 +27,14 @@ export function Stacks() {
   };
   return (
   
-  <div >
-  <div className="lg:h-px md:w-full "/>
+  <div className=''>
+  <div />
         <motion.div 
          variants={container}
          initial="hidden"
          animate="visible"
         className='flex items-center justify-center md:ml-16 lg:max-w-[1500px] text-zinc-400 '>
-          <div className='flex flex-row gap-5 max-w-[800px] w-[800px] mt-16 p-4 justify-center rounded-md shadow-xl shadow-black  ml-16  items-center  bg-zinc-950/95'>
+          <div className="shadow-xl shadow-black h-96  border-zinc-800 justify-center max-w-[800px] mt-24 text-zinc-400  md:p-8 md:rounded-lg  flex flex-col  font-sans  bg-zinc-950/95">
           <div className='flex gap-5 mb-9  p-8'> 
             <div className='min-w-64 '>
               <p className='font-semibold text-4xl'>Habilidades: </p>
@@ -42,11 +45,13 @@ export function Stacks() {
                   <li>Habilidades de comunicação;</li>
                   <li>Raciocinio lógico;</li>
                   <li>Habilidade de resolução de problemas;</li>
+                  <li>Estudando sobre Desing Patterns;</li>
+                  <li>Estudando sobre Arquitetura de software;</li>
                 </ul>
                 <p className='font-semibold text-4xl'>Idiomas:</p>
                 <ul className='list-disc pl-9'>
-                  <li>Inglês (intermediário)</li>
-                  <li>Espanhol (básico)</li>
+                  <li>Inglês</li>
+                  <li>Espanhol</li>
                 </ul>
               </div>
             </div>
@@ -61,6 +66,8 @@ export function Stacks() {
                           <img src={react} className='size-12 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='React'/>
                           <img src={node} className='size-12 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='Node.JS'/>
                           <img src={sql} className='size-12 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='SQL'/>
+                          <img src={mongodb} className='size-12 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='SQL'/>
+                          <img src={csharp} className='size-12 transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' title='SQL'/>
                         </div>
                       </div>
           </div>   

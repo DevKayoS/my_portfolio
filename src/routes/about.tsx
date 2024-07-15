@@ -30,7 +30,7 @@ export function About() {
         <div className="space-y-2 text-sm">
             <img src="https://github.com/DevKayoS.png" className="size-32 rounded-full" />
             <p><span className="font-bold">Nome: </span>Kayo Vinicius Ribeiro da Silva</p>
-            <p><span className="font-bold">Idade: </span>18 anos</p>
+            <p><span className="font-bold">Idade: </span>19 anos</p>
             <p><span className="font-bold">Faculdade: </span> UFABC</p>
             <p><span className="font-bold">Idiomas: </span> Ingles (intermediário)</p>
 
